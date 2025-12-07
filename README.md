@@ -29,7 +29,7 @@ The form is already configured with Formspree! On first submission, you'll recei
 
 ## 🌐 Deploy
 
-[online demo](https://your-portfolio-demo-link.com)
+[online demo](https://yassir-lazreq.github.io/Portfolio-yassir/)
 
 ## 🛠️ Tech Stack
 
