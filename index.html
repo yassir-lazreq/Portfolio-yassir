@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Front-End Developer Portfolio - Specialized in React, Vue.js, and modern web technologies">
+    <title>Portfolio - Yassir Lazreq - Front-End Developer</title>
+    <!-- Tailwind CSS for rapid responsive design -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-gray-900 text-gray-100 antialiased">
+    <!-- Conteneur principal et couleurs (Dark Theme) sont définis dans body et .section-title -->
+    
+    <!-- BARRE DE NAVIGATION FIXE -->
+    <header id="navbar" class="fixed top-0 left-0 w-full z-50 bg-gray-900/95 backdrop-blur-sm transition-all duration-300 shadow-lg">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
+            <a href="#home" class="text-xl font-bold text-indigo-400 hover:text-indigo-300 transition-colors">
+                Yassir Lazreq
+            </a>
+            <div id="navMenu" class="hidden md:flex space-x-6">
+                <a href="#about" class="text-sm font-medium hover:text-indigo-400 transition-colors">About</a>
+                <a href="#projects" class="text-sm font-medium hover:text-indigo-400 transition-colors">Projects</a>
+                <a href="#education" class="text-sm font-medium hover:text-indigo-400 transition-colors">Education</a>
+                <a href="#contact" class="text-sm font-medium hover:text-indigo-400 transition-colors">Contact</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobileMenuBtn" class="md:hidden text-gray-300 hover:text-indigo-400" aria-label="Toggle menu" aria-expanded="false">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main class="pt-20">
+
+        <!-- HERO SECTION -->
+        <section id="home" class="container mx-auto px-4 sm:px-6 lg:px-8 min-h-screen flex items-center justify-center py-16">
+            <div class="flex flex-col md:flex-row items-center justify-between w-full max-w-4xl text-center md:text-left">
+                <!-- Hero Text -->
+                <div class="md:w-3/5 space-y-6 reveal">
+                    <h1 class="text-5xl sm:text-7xl font-extrabold leading-tight">
+                        Hi, I'm <span class="text-indigo-400">Yassir Lazreq</span>.
+                    </h1>
+                    <p class="text-2xl text-gray-400">
+                        Passionate Full-Stack Developer | React & Vue.js Specialist | Crafting Modern Web Experiences
+                    </p>
+                    <div class="flex flex-wrap justify-center md:justify-start gap-4 pt-4">
+                        <a href="mailto:yassir.lazre@example.com" class="inline-flex items-center space-x-2 text-indigo-300 hover:text-indigo-100 transition-colors">
+                            <i data-lucide="mail" class="w-5 h-5"></i><span>Email</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/yassir-lazreq-435794215/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2 text-indigo-300 hover:text-indigo-100 transition-colors">
+                            <i data-lucide="linkedin" class="w-5 h-5"></i><span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/yassir-lazreq" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2 text-indigo-300 hover:text-indigo-100 transition-colors">
+                            <i data-lucide="github" class="w-5 h-5"></i><span>GitHub</span>
+                        </a>
+                        <a href="/assets/yassir lazreq cv.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2 text-indigo-300 hover:text-indigo-100 transition-colors">
+                            <i data-lucide="file-text" class="w-5 h-5"></i><span>Resume (PDF)</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Profile Photo -->
+                <div class="mt-10 md:mt-0 md:w-1/4 reveal delay-200">
+                    <img src="/assets/profile professionnel2.jpg" alt="Profile photo" class="w-64 h-64 object-cover rounded-full shadow-2xl border-4 border-indigo-500 mx-auto">
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-gray-800">
+            <h2 class="text-4xl font-bold mb-12 text-center text-indigo-400 reveal">About Me</h2>
+            
+            <!-- Personal Introduction -->
+            <div class="max-w-3xl mx-auto mb-16 reveal">
+                <p class="text-lg text-gray-300 text-center leading-relaxed">
+                    With several years of experience in web development, I've built solid expertise in creating modern and performant user interfaces. My philosophy is to design web applications that are not only beautiful, but also intuitive, accessible, and optimized for user experience. I'm always seeking new technologies to push the boundaries of web development.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                <!-- Technical Skills -->
+                <div class="reveal">
+                    <h3 class="text-2xl font-semibold mb-6 text-indigo-400">Technical Skills</h3>
+                    <div id="skills-list" class="space-y-6">
+                        <!-- Exemple de compétence. Le niveau sera animé par JS -->
+                        <div class="skill-item" data-skill-name="JavaScript" data-level="90">
+                            <p class="font-medium mb-1 flex justify-between">
+                                <span>JavaScript (ES6+)</span>
+                                <span class="skill-level">0%</span>
+                            </p>
+                            <div class="h-2 bg-gray-700 rounded-full overflow-hidden">
+                                <div class="h-full bg-indigo-500" data-level="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill-name="React / Next.js" data-level="85">
+                            <p class="font-medium mb-1 flex justify-between">
+                                <span>React / Laravel</span>
+                                <span class="skill-level">0%</span>
+                            </p>
+                            <div class="h-2 bg-gray-700 rounded-full overflow-hidden">
+                                <div class="h-full bg-indigo-500" data-level="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill-name="SQL / PHP" data-level="80">
+                            <p class="font-medium mb-1 flex justify-between">
+                                <span>sql / php</span>
+                                <span class="skill-level">0%</span>
+                            </p>
+                            <div class="h-2 bg-gray-700 rounded-full overflow-hidden">
+                                <div class="h-full bg-indigo-500" data-level="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill-name="HTML5 & CSS3" data-level="95">
+                            <p class="font-medium mb-1 flex justify-between">
+                                <span>HTML5 & CSS3</span>
+                                <span class="skill-level">0%</span>
+                            </p>
+                            <div class="h-2 bg-gray-700 rounded-full overflow-hidden">
+                                <div class="h-full bg-indigo-500" data-level="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill-name="Tailwind CSS" data-level="80">
+                            <p class="font-medium mb-1 flex justify-between">
+                                <span>Tailwind CSS</span>
+                                <span class="skill-level">0%</span>
+                            </p>
+                            <div class="h-2 bg-gray-700 rounded-full overflow-hidden">
+                                <div class="h-full bg-indigo-500" data-level="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Ecosystem -->
+                <div class="reveal delay-200">
+                    <h3 class="text-2xl font-semibold mb-6 text-indigo-400">Tools & Ecosystem</h3>
+                    <div class="flex flex-wrap gap-4">
+                        <span class="px-4 py-2 bg-gray-800 rounded-full text-sm font-medium text-gray-200 shadow-md">Git / GitHub</span>
+                        <span class="px-4 py-2 bg-gray-800 rounded-full text-sm font-medium text-gray-200 shadow-md">Node.js</span>
+                        <span class="px-4 py-2 bg-gray-800 rounded-full text-sm font-medium text-gray-200 shadow-md">TypeScript</span>
+                        <span class="px-4 py-2 bg-gray-800 rounded-full text-sm font-medium text-gray-200 shadow-md">Figma</span>
+                        <span class="px-4 py-2 bg-gray-800 rounded-full text-sm font-medium text-gray-200 shadow-md">Jest / Vitest</span>
+                        <span class="px-4 py-2 bg-gray-800 rounded-full text-sm font-medium text-gray-200 shadow-md">VS Code</span>
+                        <span class="px-4 py-2 bg-gray-800 rounded-full text-sm font-medium text-gray-200 shadow-md">Jira / Trello</span>
+                        <span class="px-4 py-2 bg-gray-800 rounded-full text-sm font-medium text-gray-200 shadow-md">Servers / Databases</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-gray-800">
+            <h2 class="text-4xl font-bold mb-12 text-center text-indigo-400 reveal">My Projects</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+                <!-- Project Card 1 -->
+                <div class="bg-gray-800 rounded-xl shadow-xl overflow-hidden reveal">
+                    <img src="https://placehold.co/600x400/10b981/ffffff?text=Medi-Care+" alt="Medi-Care +" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-indigo-300">Medi-Care +</h3>
+                        <p class="text-gray-400 text-sm mb-4">
+                            A comprehensive medical platform connecting patients with healthcare providers for seamless consultations and record management.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs font-semibold inline-block px-2 py-1 leading-none rounded-full bg-indigo-600 text-white">html</span>
+                            <span class="text-xs font-semibold inline-block px-2 py-1 leading-none rounded-full bg-gray-600 text-white">Tailwind CSS</span>
+                            <span class="text-xs font-semibold inline-block px-2 py-1 leading-none rounded-full bg-yellow-600 text-white">JavaScript</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="https://yassir-lazreq.github.io/MediCare-V2/dashboord/pages/dashboard.html" target="_blank" rel="noopener noreferrer" class="text-indigo-400 hover:text-indigo-300 font-medium flex items-center space-x-1">
+                                <i data-lucide="monitor" class="w-4 h-4"></i><span>Demo</span>
+                            </a>
+                            <a href="https://github.com/yassir-lazreq/MediCare-V2" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-gray-200 font-medium flex items-center space-x-1">
+                                <i data-lucide="github" class="w-4 h-4"></i><span>Source Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="bg-gray-800 rounded-xl shadow-xl overflow-hidden reveal delay-200">
+                    <img src="https://placehold.co/600x400/f59e0b/ffffff?text=Portfolio" alt="Portfolio Project" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-indigo-300">This Portfolio</h3>
+                        <p class="text-gray-400 text-sm mb-4">
+                            Design and development of this website, focusing on responsive design and performance optimization.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs font-semibold inline-block px-2 py-1 leading-none rounded-full bg-indigo-600 text-white">HTML5</span>
+                            <span class="text-xs font-semibold inline-block px-2 py-1 leading-none rounded-full bg-gray-600 text-white">CSS3</span>
+                            <span class="text-xs font-semibold inline-block px-2 py-1 leading-none rounded-full bg-yellow-600 text-white">JavaScript</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-indigo-400 hover:text-indigo-300 font-medium flex items-center space-x-1">
+                                <i data-lucide="monitor" class="w-4 h-4"></i><span>Demo (Current)</span>
+                            </a>
+                            <a href="https://github.com/yourusername/portfolio" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-gray-200 font-medium flex items-center space-x-1">
+                                <i data-lucide="github" class="w-4 h-4"></i><span>Source Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="bg-gray-800 rounded-xl shadow-xl overflow-hidden reveal delay-[400ms]">
+                    <img src="https://placehold.co/600x400/ef4444/ffffff?text=work+space+management" alt="work space management" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-indigo-300">Work Space Management</h3>
+                        <p class="text-gray-400 text-sm mb-4">
+                            a platform that allows the manager to manage his employees, workspaces and tasks effectively.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs font-semibold inline-block px-2 py-1 leading-none rounded-full bg-indigo-600 text-white">html</span>
+                            <span class="text-xs font-semibold inline-block px-2 py-1 leading-none rounded-full bg-gray-600 text-white">JavaScript</span>
+                            <span class="text-xs font-semibold inline-block px-2 py-1 leading-none rounded-full bg-yellow-600 text-white">SQL</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="https://yassir-lazreq.github.io/Workspace-Staff-Manager/" target="_blank" rel="noopener noreferrer" class="text-indigo-400 hover:text-indigo-300 font-medium flex items-center space-x-1">
+                                <i data-lucide="monitor" class="w-4 h-4"></i><span>Demo</span>
+                            </a>
+                            <a href="https://github.com/yassir-lazreq/Workspace-Staff-Manager" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-gray-200 font-medium flex items-center space-x-1">
+                                <i data-lucide="github" class="w-4 h-4"></i><span>Source Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+        <!-- EDUCATION & CERTIFICATIONS SECTION -->
+        <section id="education" class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-gray-800">
+            <h2 class="text-4xl font-bold mb-12 text-center text-indigo-400 reveal">Education & Certifications</h2>
+            
+            <div class="max-w-3xl mx-auto reveal">
+                <div class="space-y-8">
+                    
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item border-l-2 border-indigo-500">
+                        <p class="text-sm text-gray-400 italic">June 2025 - YouCode</p>
+                        <h3 class="text-xl font-bold text-indigo-300 mt-1">Full-Stack Developer specialization</h3>
+                        <p class="text-gray-300">
+                            Specialization in modern application architecture and Full-Stack development.
+                        </p>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item border-l-2 border-indigo-500">
+                        <p class="text-sm text-gray-400 italic">June 2024 - university ibn tofail</p>
+                        <h3 class="text-xl font-bold text-indigo-300 mt-1">DEUG in computer science</h3>
+                        <p class="text-gray-300">
+                            Deep dive into Hooks, Context API, and component performance optimization.
+                        </p>
+                    </div>
+
+                    <!-- Timeline Item 3 -->
+                    <div class="timeline-item border-l-2 border-indigo-500">
+                        <p class="text-sm text-gray-400 italic">June 2023 - zone 01</p>
+                        <h3 class="text-xl font-bold text-indigo-300 mt-1">1 month formation in go lang</h3>
+                        <p class="text-gray-300">
+                            Intensive training on Go language fundamentals and backend development.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-gray-800">
+            <h2 class="text-4xl font-bold mb-12 text-center text-indigo-400 reveal">Contact Me</h2>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 max-w-5xl mx-auto">
+                <!-- Contact Information -->
+                <div class="lg:col-span-1 space-y-8 reveal">
+                    <div class="flex items-start space-x-4">
+                        <i data-lucide="mail" class="w-6 h-6 text-indigo-400 flex-shrink-0" aria-hidden="true"></i>
+                        <div>
+                            <p class="text-lg font-semibold">Email</p>
+                            <a href="mailto:yassir.lazreq@example.com" class="text-gray-400 hover:text-indigo-300">yassir.lazre@example.com</a>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <i data-lucide="phone" class="w-6 h-6 text-indigo-400 flex-shrink-0" aria-hidden="true"></i>
+                        <div>
+                            <p class="text-lg font-semibold">Phone</p>
+                            <p class="text-gray-400">+212 6 39 43 68 72</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <i data-lucide="map-pin" class="w-6 h-6 text-indigo-400 flex-shrink-0" aria-hidden="true"></i>
+                        <div>
+                            <p class="text-lg font-semibold">Location</p>
+                            <p class="text-gray-400">Kenitra, Morocco</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="lg:col-span-2 bg-gray-800 p-8 rounded-xl shadow-2xl reveal delay-200">
+                    <form id="contactForm" class="space-y-6" aria-label="Contact form">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-300 mb-1">Full Name</label>
+                            <input type="text" id="name" name="name" required autocomplete="name" class="w-full px-4 py-2 rounded-lg bg-gray-700 border border-gray-600 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500 focus:outline-none text-white">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email</label>
+                            <input type="email" id="email" name="email" required autocomplete="email" class="w-full px-4 py-2 rounded-lg bg-gray-700 border border-gray-600 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500 focus:outline-none text-white">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-300 mb-1">Message</label>
+                            <textarea id="message" name="message" rows="4" required class="w-full px-4 py-2 rounded-lg bg-gray-700 border border-gray-600 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500 focus:outline-none text-white resize-none"></textarea>
+                        </div>
+                        <button type="submit" id="submitButton" class="w-full py-3 bg-indigo-600 hover:bg-indigo-700 disabled:bg-gray-600 disabled:cursor-not-allowed text-white font-bold rounded-lg transition-colors duration-200 flex items-center justify-center space-x-2">
+                            <span id="buttonText">Send Message</span>
+                            <i data-lucide="send" class="w-5 h-5" id="sendIcon" aria-hidden="true"></i>
+                            <i data-lucide="loader-2" class="w-5 h-5 animate-spin hidden" id="loadingIcon" aria-hidden="true"></i>
+                        </button>
+                        <p id="formMessage" class="mt-4 text-center hidden font-medium" role="alert" aria-live="polite"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-900 border-t border-gray-800 mt-16 py-8 text-center text-gray-500">
+        <p>&copy; 2025 . yassir lazreq <span class="text-red-500" aria-label="love">❤️</span> and Tailwind CSS.</p>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script type="module" src="main.js"></script>
+</body>
+</html>
